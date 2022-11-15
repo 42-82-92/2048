@@ -27,3 +27,6 @@ Task definitions are collections of container configurations (which image to use
 How do they interact with each other?
 
 Tasks cannot be configured to use a load balancer, only Services can.
+
+Check out Code Camp's deep dive into ECS:
+https://www.freecodecamp.org/news/amazon-ecs-terms-and-architecture-807d8c4960fd/
