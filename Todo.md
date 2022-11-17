@@ -8,20 +8,20 @@ Do some research on ECS to understand the components (what is a Service? what is
 
 Next, build an ECS cluster with your 2048 container image and use an ALB as your endpoint. Hit that in a browser and confirm it works
 
-
 ## Knowledge
 
-### Service:
+### Service  
 
-This is like an orchestrator. It manages all tasks, load balancing, and that you always have N number of tasks running at all times. So if an instance has a fatal error, the service is what would manage replacing that instance with a fresh one.  
+This is like an orchestrator. It manages all tasks, load balancing, rules and makes sure you always have N number of tasks running at all times. So if an instance has a fatal error, the service is what would manage replacing that instance with a fresh one. or if CPU usage is to high, your task could add another instance to share the load. 
 
 ### Task
 
+Tasks are simply instances of task definitions, running the containers detailed in the task definition. Multiple tasks can be created by one task definition (like for scaling).
 Tasks cannot be configured to use a load balancer, only Services can.
 
 ### Task definition
 
-Task definitions are collections of container configurations (which image to use, ports to expose, CPU and memory allotments.)
+Task definitions are collections of container configurations (which image to use, ports to expose, CPU and memory allotments). These act like the blueprints of the hole operation.
 
 
 How do they interact with each other?
