@@ -44,3 +44,5 @@ Amazon ECS, or any container management service, aims to make this as simple as 
 
 Check out Code Camp's deep dive into ECS:
 <https://www.freecodecamp.org/news/amazon-ecs-terms-and-architecture-807d8c4960fd/>
+
+The TF directory for this project is in the repo /terraform/2048.  
